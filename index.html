@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<div class="navbar">
+  <div class="logo">
+    <img src="https://th.bing.com/th/id/OIG4.XjJVmEQokpadRPZPPdFa?w=270&h=270&c=6&r=0&o=5&pid=ImgGn" height="25px" alt="Logo of the form survey">
+  </div>
+  <div class="nav-links">
+    <a href="#">Home</a>
+    <a href="#">Source Code</a>
+    <a href="#">Sign Up</a>
+    <a href="#">Log In</a>
+  </div>
+</div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FCC: Survey Form</title>
+  <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>FREE Survey Form</h1>
+  <p>Thank you for taking time to improve the platform</p>
+  <div class="black-box">
+
+    <form id="form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required>
+
+      <label for="age">Age:</label>
+      <input type="text" id="age" name="age" required>
+
+      <label for="role">Which option best describes your current role?</label>
+      <select name="role">
+        <option value="student">Student</option>
+        <option value="Full Time Job"">Full Time Job</option>
+        <option value="Full Time Learner"">Full Time Learner</option>
+        <option value="Prefer not to say"">Prefer not to say </option>
+        <option value="other">Other</option>
+      </select>
+      <label id="radio.buttonradio-buttons" for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+       <input type="radio" name="recommend" value="definitely"> Definitely
+       <input type="radio" name="recommend" value="maybe"> Maybe
+       <input type="radio" name="recommend" value="not sure"> Not Sure
+      <label for="favorite-feature">What is your favorite feature of freeCodeCamp?</label>
+      <select name="favorite-feature">
+        <option value="challenge">Challenge</option>
+        <option value="project">Project</option>
+        <option value="community">Community</option>
+        <option value="open source">Open Source</option>
+      </select>
+      <label for="improvements">What would you like to see improved? (Check all that apply)</label>
+      <div>
+         <label for="front-end-project">Front-end project
+        <input type="checkbox" id="front-end-project" name="improvements[]" value="front-end project">
+        </label>
+      </div>
+      <div>
+        <label for="back-end-project">Back-end project
+        <input type="checkbox" id="back-end-project" name="improvements[]" value="back-end project">
+          </label>
+      </div>
+      <div>
+         <label for="data-visualization">Data visualization
+        <input type="checkbox" id="data-visualization" name="improvements[]" value="data visualization">
+           </label>
+      </div>
+      <div>
+        <label for="challenges">Challenges
+        <input type="checkbox" id="challenges" name="improvements[]" value="challenges">
+          </label>
+      </div>
+      <div>
+         <label for="open-source-community">Open source community
+        <input type="checkbox" id="open-source-community" name="improvements[]" value="open source community">
+           </label>
+      </div>
+      <div>
+         <label for="gitter-help-rooms">Gitter help rooms
+        <input type="checkbox" id="gitter-help-rooms" name="improvements[]" value="gitter help rooms">
+           </label>
+      </div>
+      <div>
+         <label for="videos">Videos
+        <input type="checkbox" id="videos" name="improvements[]" value="videos">
+           </label>
+      </div>
+      <div>
+        <label for="city-meetups">City meetups
+        <input type="checkbox" id="city-meetups" name="improvements[]" value="city meetups">
+          </label>
+      </div>
+      <div>
+        <label for="wiki">Wiki
+        <input type="checkbox" id="wiki" name="improvements[]" value="wiki">
+          </label>
+      </div>
+      <div>
+        <label for="forum">Forum
+        <input type="checkbox" id="forum" name="improvements[]" value="forum">
+          </label>
+      </div>
+      <div>
+        <label for="additional-course">Additional course
+        <input type="checkbox" id="additional-course" name="improvements[]" value="additional course">
+          </label>
+      </div>
+        <label for="feedback">Any comments or suggestions?</label>
+        <textarea name="feedback" id="feedback" cols="65" rows="10"></textarea>
+        <button type="submit" class="btn btn-success">Submit</button>
+  </div>
+</body>
+
+</html>
